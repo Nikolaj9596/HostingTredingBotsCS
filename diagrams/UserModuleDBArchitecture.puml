@@ -1,0 +1,81 @@
+@startuml
+
+class User {
+  + id: primary_key[uuid]
+  + email: string
+  + created_at: datetime 
+  + updated_at: datetime 
+  + archived_at: datetime
+}
+
+class Session {
+  + id: primary_key[uuid]
+  + created_at: datetime 
+  + updated_at: datetime 
+  + hash_token: str
+  + expair_date: datetime
+  + archived_at: datetime
+}
+
+class UserSession {
+  + user_id: primary_key
+  + session_id: primary_key
+}
+
+class Profile {
+  + id: primary_key[uuid]
+  + first_name: string
+  + last_name: string
+  + middle_name: string
+  + date_birfday: datetime
+  + user_id: primary_key[uuid]
+  + created_at: datetime 
+  + updated_at: datetime 
+  + archived_at: datetime
+}
+
+class TradingPlatformAccount {
+  + id: primary_key[uuid]
+  + trading_platform_id: primary_key[uuid]
+  + created_at: datetime 
+  + updated_at: datetime 
+  + archived_at: datetime
+}
+
+class UserTradingPlatformAccount{
+  + user_id: primary_key[uuid]
+  + trading_platform_account_id: primary_key[uuid] 
+}
+
+class Wallet{
+  + id: primary_key[uuid]
+  + trading_platform_account_id: primary_key[uuid] 
+  + created_at: datetime 
+  + updated_at: datetime 
+  + archived_at: datetime
+}
+
+class WalletItem{
+  + id: primary_key[uuid]
+  + type_money: string
+  + count: integar
+  + price: float
+  + created_at: datetime 
+  + updated_at: datetime 
+  + archived_at: datetime
+}
+
+class WalletWalletItem{
+  + wallet_id: primary_key[uuid]
+  + wallet_item_id: primary_key[uuid]
+}
+
+User::id --> UserSession::user_id
+User::id --> UserTradingPlatformAccount::user_id
+User::id --> Profile::user_id
+TradingPlatformAccount::id --> UserTradingPlatformAccount::trading_platform_account_id
+TradingPlatformAccount::id --> Wallet::trading_platform_account_id
+Session::id --> UserSession::session_id
+Wallet::id --> WalletWalletItem::wallet_id
+WalletItem::id --> WalletWalletItem::wallet_item_id
+@enduml

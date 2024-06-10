@@ -1,9 +1,10 @@
-namespace Profile.Domain
+using MediatR;
+
+namespace Profile.Application.Profiles.Commands.CreateProfile
 {
-  public class Profile
+  public class CreateProfileCommand: IRequest<Guid>
   {
-    public Guid Id { get; set; }
-    public Guid UserId { get; set; }
+    public Guid UserId {get; set;}
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string MiddleName { get; set; }
@@ -13,4 +14,5 @@ namespace Profile.Domain
     public DateTime? ArchivedAt { get; set; }
     public byte[] Avatar { get; set; }
   }
+
 }
