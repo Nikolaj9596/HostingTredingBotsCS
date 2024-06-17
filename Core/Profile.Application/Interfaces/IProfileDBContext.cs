@@ -9,6 +9,5 @@ namespace Profile.Application.Interfaces
   {
     DbSet<Profile.Domain.Profile> Profiles {get; set;}
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
-
   }
 }

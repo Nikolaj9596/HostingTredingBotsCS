@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qoO6RZHUN5E=",
+  "dgSpecHash": "UyeUVP+4e2Y=",
   "success": true,
   "projectFilePath": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Infrastructure/Profile.Persistentce/Profile.Persistentce.csproj",
   "expectedPackageFiles": [
+    "/home/nikolaj/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/nikolaj/.nuget/packages/mediatr/12.3.0/mediatr.12.3.0.nupkg.sha512",
+    "/home/nikolaj/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/nikolaj/.nuget/packages/microsoft.data.sqlite.core/8.0.6/microsoft.data.sqlite.core.8.0.6.nupkg.sha512",
     "/home/nikolaj/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "/home/nikolaj/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.6/microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

@@ -1,0 +1,16 @@
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.csproj.AssemblyReference.cache
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.AssemblyInfoInputs.cache
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.AssemblyInfo.cs
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.csproj.CoreCompileInputs.cache
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.sourcelink.json
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/bin/Debug/net8.0/Profile.Application.deps.json
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/bin/Debug/net8.0/Profile.Application.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/bin/Debug/net8.0/Profile.Application.pdb
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/bin/Debug/net8.0/Profile.Domain.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/bin/Debug/net8.0/Profile.Domain.pdb
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile..63963AFF.Up2Date
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/refint/Profile.Application.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/Profile.Application.pdb
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Application/obj/Debug/net8.0/ref/Profile.Application.dll

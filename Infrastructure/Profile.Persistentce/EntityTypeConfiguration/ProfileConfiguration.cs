@@ -4,9 +4,9 @@ using Profile.Domain;
 
 namespace Profile.Persistence.EntityTypeConfiguration
 {
-    public class ProfileConfiguration : IEntityTypeConfiguration<Profile>
+    public class ProfileConfiguration : IEntityTypeConfiguration<Profile.Domain.Profile>
     {
-        public void Configure(EntityTypeBuilder<Profile> builder)
+        public void Configure(EntityTypeBuilder<Profile.Domain.Profile> builder)
         {
             // Установка первичного ключа
             builder.HasKey(profile => profile.Id);

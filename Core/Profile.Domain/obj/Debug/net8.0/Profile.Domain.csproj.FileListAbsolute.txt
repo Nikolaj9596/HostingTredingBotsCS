@@ -1,0 +1,12 @@
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/bin/Debug/net8.0/Profile.Domain.deps.json
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/bin/Debug/net8.0/Profile.Domain.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/bin/Debug/net8.0/Profile.Domain.pdb
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.AssemblyInfoInputs.cache
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.AssemblyInfo.cs
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.csproj.CoreCompileInputs.cache
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.sourcelink.json
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/refint/Profile.Domain.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/Profile.Domain.pdb
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Core/Profile.Domain/obj/Debug/net8.0/ref/Profile.Domain.dll
