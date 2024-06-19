@@ -1,4 +1,4 @@
-namespace Profile.Persistence
+namespace Profile.Persistentce 
 {
   public class Dbinitializer
   {

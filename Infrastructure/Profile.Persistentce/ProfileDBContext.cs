@@ -3,7 +3,7 @@ using Profile.Application.Interfaces;
 using Profile.Domain;
 using Profile.Persistence.EntityTypeConfiguration;
 
-namespace Profile.Persistence
+namespace Profile.Persistentce 
 {
   public class ProfileDBContext: DbContext, IProfileDBContext
  {

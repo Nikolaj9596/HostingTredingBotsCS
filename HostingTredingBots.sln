@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Persistentce", "Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presintation", "Presintation", "{52832B36-2BBE-49F2-B97F-A664CEE85995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileWebApi", "Presintation\ProfileWebApi\ProfileWebApi.csproj", "{70A5D5DC-1ACB-4D97-86F5-28072159C10E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiles.WebApi", "Presintation\Profiles.WebApi\ProfileWebApi.csproj", "{70A5D5DC-1ACB-4D97-86F5-28072159C10E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
