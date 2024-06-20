@@ -9,10 +9,10 @@ namespace Profile.Application.Profiles.Queries.GetListProfiles
   public class ProfileLookupDto : IMapWith<Profile.Domain.Profile>
   {
     public Guid Id { get; set; }
-    public Guid FirstName { get; set; }
-    public Guid LastName { get; set; }
-    public Guid MiddleName { get; set; }
-    public Guid Avatar { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string MiddleName { get; set; }
+    public byte[] Avatar { get; set; }
 
     public void Mapping(AutoMapper.Profile profile)
     {

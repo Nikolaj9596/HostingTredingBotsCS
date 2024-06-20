@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "x7vowMeBW8LRRtNfEnkctIdFaYr8p9gImnJSV+svy+M=",
+  "Hash": "JyBwdjCX/yWBOSJDHYkRFczakX1rShW34HHFWddGyCo=",
   "Source": "ProfileWebApi",
   "BasePath": "_content/ProfileWebApi",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/bundle/ProfileWebApi.styles.css",
-      "SourceId": "ProfileWebApi",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/bundle/",
-      "BasePath": "_content/ProfileWebApi",
-      "RelativePath": "ProfileWebApi.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/bundle/ProfileWebApi.styles.css"
-    },
-    {
-      "Identity": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/projectbundle/ProfileWebApi.bundle.scp.css",
-      "SourceId": "ProfileWebApi",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/projectbundle/",
-      "BasePath": "_content/ProfileWebApi",
-      "RelativePath": "ProfileWebApi.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/projectbundle/ProfileWebApi.bundle.scp.css"
-    },
     {
       "Identity": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/wwwroot/css/site.css",
       "SourceId": "ProfileWebApi",

@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/projectbundle/ProfileWebApi.bundle.scp.css",
-      "PackagePath": "staticwebassets/ProfileWebApi.bundle.scp.css"
-    },
-    {
       "Id": "/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

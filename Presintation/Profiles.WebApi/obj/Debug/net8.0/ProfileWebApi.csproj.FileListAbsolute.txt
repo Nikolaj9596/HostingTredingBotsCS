@@ -35,8 +35,6 @@
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.AssemblyInfo.cs
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.csproj.CoreCompileInputs.cache
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.MvcApplicationPartsAssemblyInfo.cache
-/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.RazorAssemblyInfo.cache
-/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.RazorAssemblyInfo.cs
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.sourcelink.json
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.dll
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/refint/ProfileWebApi.dll
@@ -96,9 +94,7 @@
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ProfileWebApi.props
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ProfileWebApi.props
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/staticwebassets.pack.json
-/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/bundle/ProfileWebApi.styles.css
-/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/scopedcss/projectbundle/ProfileWebApi.bundle.scp.css
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileW.27FBBF15.Up2Date
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.genruntimeconfig.cache
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ref/ProfileWebApi.dll
