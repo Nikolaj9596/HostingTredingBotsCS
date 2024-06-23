@@ -98,3 +98,5 @@
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileW.27FBBF15.Up2Date
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ProfileWebApi.genruntimeconfig.cache
 /home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/obj/Debug/net8.0/ref/ProfileWebApi.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/bin/Debug/net8.0/FluentValidation.dll
+/home/nikolaj/Universety/DistributedSystem/HostingTradingBots/Presintation/Profiles.WebApi/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

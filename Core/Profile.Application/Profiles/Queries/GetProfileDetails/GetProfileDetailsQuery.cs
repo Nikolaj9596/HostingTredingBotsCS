@@ -1,4 +1,3 @@
-using System;
 using MediatR;
 
 namespace Profile.Application.Profiles.Queries.GetProfileDetails
