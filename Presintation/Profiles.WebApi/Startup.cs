@@ -7,6 +7,7 @@ using Profile.Application;
 using Profile.Application.Common.Mappings;
 using Profile.Application.Interfaces;
 using Profile.Persistentce;
+using Profile.WebApi.Middleware;
 
 namespace Profile.WebApi
 {
@@ -45,7 +46,7 @@ namespace Profile.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
