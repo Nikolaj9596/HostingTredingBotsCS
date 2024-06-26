@@ -1,7 +1,4 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Reflection;
 using Profile.Application;
 using Profile.Application.Common.Mappings;
@@ -38,6 +35,17 @@ namespace Profile.WebApi
                         policy.AllowAnyOrigin();
                     });
             });
+
+            services.AddAuthentication(config =>
+                {
+                    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                    .AddJwtBearer("Bearer", options => { 
+                        options.Authority = "http://localhost:5098/"; 
+                        options.Audience = "ProfileWebApi";
+                        options.RequireHttpsMetadata = false;
+                    });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -50,7 +58,8 @@ namespace Profile.WebApi
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
