@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using Profile.Application.Interfaces;
+using HostingTradingBots.Application.Interfaces;
 
 namespace Profile.Persistentce 
 {

@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Profile.Application.Interfaces;
-using Profile.Domain;
+using HostingTradingBots.Application.Interfaces;
 using Profile.Persistence.EntityTypeConfiguration;
 
 namespace Profile.Persistentce 

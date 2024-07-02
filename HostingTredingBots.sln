@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{73B0874A-1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Domain", "Core\Profile.Domain\Profile.Domain.csproj", "{B6DCF6DB-47BE-48EB-BFF0-C2C41D618D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Application", "Core\Profile.Application\Profile.Application.csproj", "{35A9BF2E-8727-4701-880C-184260A0A39D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingTradingBots.Application", "Core\HostingTradingBots.Application\HostingTradingBots.Application.csproj", "{35A9BF2E-8727-4701-880C-184260A0A39D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{05FBCD64-1A10-4F58-98BB-6F8E101CCC59}"
 EndProject
@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Persistentce", "Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presintation", "Presintation", "{52832B36-2BBE-49F2-B97F-A664CEE85995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiles.WebApi", "Presintation\Profiles.WebApi\ProfileWebApi.csproj", "{70A5D5DC-1ACB-4D97-86F5-28072159C10E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingTradingBots.WebApi", "Presintation\HostingTradingBots.WebApi\HostingTradingBots.WebApi.csproj", "{70A5D5DC-1ACB-4D97-86F5-28072159C10E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

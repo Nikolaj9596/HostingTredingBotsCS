@@ -1,26 +1,28 @@
-using Profile.Identity.Data;
+using Profile.Persistentce;
 
-namespace Profile.Identity
+namespace HostingTradingBots.WebApi
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+
             var host = CreateHostBuilder(args).Build();
+
             using (var scope = host.Services.CreateScope())
             {
                 var serviceProvider = scope.ServiceProvider;
                 try
                 {
-                    var context = serviceProvider.GetRequiredService<AuthDbContext>();
-                    DbInitializer.Initialize(context);
+                    var context = serviceProvider.GetRequiredService<ProfileDBContext>();
+                    Dbinitializer.Initialize(context);
                 }
                 catch (Exception exception)
                 {
-                    var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(exception, "An error occurred while app initialization");
+                    // Log.Fatal(exception, "An error occurred while app initialization");
                 }
             }
+
             host.Run();
         }
 
@@ -32,3 +34,4 @@ namespace Profile.Identity
                 });
     }
 }
+
