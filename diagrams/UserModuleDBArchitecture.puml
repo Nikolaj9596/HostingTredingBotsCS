@@ -34,6 +34,21 @@ class Profile {
   + archived_at: datetime
 }
 
+class TradingPlatform {
+  + id: primary_key[uuid]
+  + name: string
+  + is_active: boolean 
+  + referral_link: string
+  + api_link: string
+  + test_api_link: string
+  + docs_link: string
+  + site_link: string
+  + icon: string
+  + created_at: datetime 
+  + updated_at: datetime 
+  + archived_at: datetime
+}
+
 class TradingPlatformAccount {
   + id: primary_key[uuid]
   + trading_platform_id: primary_key[uuid]
