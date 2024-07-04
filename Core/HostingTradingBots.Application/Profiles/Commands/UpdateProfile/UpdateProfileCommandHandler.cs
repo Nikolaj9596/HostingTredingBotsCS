@@ -5,34 +5,34 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HostingTradingBots.Application.Profiles.Commands.UpdateProfile
 {
-    public class UpdateProfileCommandHandler : IRequestHandler<UpdateProfileCommand, Unit>
+  public class UpdateProfileCommandHandler : IRequestHandler<UpdateProfileCommand, Unit>
+  {
+    private readonly IProfileDBContext _dbContext;
+
+    public UpdateProfileCommandHandler(IProfileDBContext dBContext) =>
+      _dbContext = dBContext;
+
+    public async Task<Unit> Handle(UpdateProfileCommand request, CancellationToken cancellationToken)
     {
-        private readonly IProfileDBContext _dbContext;
+      var entity =
+        await _dbContext.Profiles.FirstOrDefaultAsync(profile =>
+            profile.Id == request.Id, cancellationToken);
 
-        public UpdateProfileCommandHandler(IProfileDBContext dBContext) =>
-          _dbContext = dBContext;
+      if (entity == null || entity.UserId != request.UserId)
+      {
+        throw new NotFoundException(nameof(Profile.Domain.Profile), request.Id);
+      }
 
-        public async Task<Unit> Handle(UpdateProfileCommand request, CancellationToken cancellationToken)
-        {
-            var entity =
-              await _dbContext.Profiles.FirstOrDefaultAsync(profile =>
-                  profile.Id == request.Id, cancellationToken);
-
-            if (entity == null || entity.UserId != request.UserId)
-            {
-                throw new NotFoundException(nameof(Profile.Domain.Profile), request.Id);
-            }
-
-            entity.FirstName = request.FirstName;
-            entity.LastName = request.LastName;
-            entity.MiddleName = request.MiddleName;
-            entity.Avatar = request.Avatar;
-            entity.DateBirthday = request.DateBirthday;
-            entity.UpdatedAt = DateTime.Now;
+      entity.FirstName = request.FirstName;
+      entity.LastName = request.LastName;
+      entity.MiddleName = request.MiddleName;
+      entity.Avatar = request.Avatar;
+      entity.DateBirthday = request.DateBirthday;
+      entity.UpdatedAt = DateTime.Now;
 
 
-            await _dbContext.SaveChangesAsync(cancellationToken);
-            return Unit.Value;
-        }
+      await _dbContext.SaveChangesAsync(cancellationToken);
+      return Unit.Value;
     }
+  }
 }
