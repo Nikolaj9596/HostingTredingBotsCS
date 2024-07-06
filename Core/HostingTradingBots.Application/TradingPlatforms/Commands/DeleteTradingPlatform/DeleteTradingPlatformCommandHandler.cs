@@ -1,36 +1,30 @@
 using MediatR;
+using HostingTradingBots.Application.Common.Exceptions;
 using HostingTradingBots.Application.Interfaces;
 
-namespace HostingTradingBots.Application.TradingPlatforms.Commands.CreateTradingPlatform
+namespace HostingTradingBots.Application.TradingPlatforms.Commands.DeleteTradingPlatform
 {
-  public class CreateTradingPlatformCommandHandler : IRequestHandler<CreateTradingPlatformCommand, Guid>
+  public class DeleteTradingPlatformCommandHandler : IRequestHandler<DeleteTradingPlatformCommand, Unit>
   {
     private readonly ITradingPlatrformDBContext _dbContext;
 
-    public CreateTradingPlatformCommandHandler(ITradingPlatrformDBContext dBContext) =>
+    public DeleteTradingPlatformCommandHandler(ITradingPlatrformDBContext dBContext) =>
       _dbContext = dBContext;
 
-    public async Task<Guid> Handle(CreateTradingPlatformCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(DeleteTradingPlatformCommand request, CancellationToken cancellationToken)
     {
-      var tradingPlatform = new TradingPlatform.Domain.TradingPlatform
+
+      var entity = await _dbContext.TradingPlatforms.FindAsync(new object[] { request.Id }, cancellationToken);
+
+      if (entity == null)
       {
-        Id = Guid.NewGuid(),
-        Name = request.Name,
-        SiteLink = request.SiteLink,
-        IsActive = request.IsActive,
-        ReferralLink = request.ReferralLink,
-        ApiLink = request.ApiLink,
-        TestApiLink = request.TestApiLink,
-        DocsLink = request.DocsLink,
-        Icon = request.Icon,
-        CreatedAt = DateTime.Now,
-        UpdatedAt = null
+        throw new NotFoundException(nameof(Profile), request.Id);
+      }
 
-      };
-
-      await _dbContext.TradingPlatforms.AddAsync(tradingPlatform, cancellationToken);
+      _dbContext.TradingPlatforms.Remove(entity);
       await _dbContext.SaveChangesAsync(cancellationToken);
-      return tradingPlatform.Id;
+
+      return Unit.Value;
     }
   }
 

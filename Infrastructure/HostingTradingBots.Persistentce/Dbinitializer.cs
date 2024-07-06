@@ -1,4 +1,4 @@
-namespace Profile.Persistentce 
+namespace HostingTradingBots.Persistentce 
 {
   public class Dbinitializer
   {

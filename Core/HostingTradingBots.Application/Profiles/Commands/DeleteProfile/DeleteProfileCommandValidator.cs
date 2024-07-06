@@ -2,14 +2,14 @@ using FluentValidation;
 
 namespace HostingTradingBots.Application.Profiles.Commands.DeleteProfile
 {
-    public class DeleteProfileCommandValidator : AbstractValidator<DeleteProfileCommand>
+  public class DeleteProfileCommandValidator : AbstractValidator<DeleteProfileCommand>
+  {
+    public DeleteProfileCommandValidator()
     {
-        public DeleteProfileCommandValidator()
-        {
-            RuleFor(updateProfileCommand =>
-                updateProfileCommand.Id).NotEqual(Guid.Empty);
-            RuleFor(updateProfileCommand =>
-                updateProfileCommand.UserId).NotEqual(Guid.Empty);
-        }
+      RuleFor(deleteProfileCommand =>
+          deleteProfileCommand.Id).NotEqual(Guid.Empty);
+      RuleFor(deleteProfileCommand =>
+          deleteProfileCommand.UserId).NotEqual(Guid.Empty);
     }
+  }
 }

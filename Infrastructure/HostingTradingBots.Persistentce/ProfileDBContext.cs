@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using HostingTradingBots.Application.Interfaces;
-using Profile.Persistence.EntityTypeConfiguration;
+using HostingTradingBots.Persistentce.EntityTypeConfiguration;
 
-namespace Profile.Persistentce 
+namespace HostingTradingBots.Persistentce 
 {
   public class ProfileDBContext: DbContext, IProfileDBContext
  {

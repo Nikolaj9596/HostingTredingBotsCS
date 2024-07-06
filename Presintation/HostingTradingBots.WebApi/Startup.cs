@@ -3,7 +3,7 @@ using System.Reflection;
 using HostingTradingBots.Application;
 using HostingTradingBots.Application.Common.Mappings;
 using HostingTradingBots.Application.Interfaces;
-using Profile.Persistentce;
+using HostingTradingBots.Persistentce;
 using HostingTradingBots.WebApi.Middleware;
 
 namespace HostingTradingBots.WebApi

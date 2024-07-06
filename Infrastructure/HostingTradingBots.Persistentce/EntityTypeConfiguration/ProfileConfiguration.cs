@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Profile.Domain;
 
-namespace Profile.Persistence.EntityTypeConfiguration
+namespace HostingTradingBots.Persistentce.EntityTypeConfiguration
 {
     public class ProfileConfiguration : IEntityTypeConfiguration<Profile.Domain.Profile>
     {

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using HostingTradingBots.Application.Interfaces;
 
-namespace Profile.Persistentce 
+namespace HostingTradingBots.Persistentce 
 {
   public static class DependencyInjection
   {

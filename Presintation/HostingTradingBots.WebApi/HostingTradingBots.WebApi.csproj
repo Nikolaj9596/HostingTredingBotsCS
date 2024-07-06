@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\HostingTradingBots.Application\HostingTradingBots.Application.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\Profile.Persistentce\Profile.Persistentce.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\HostingTradingBots.Persistentce\HostingTradingBots.Persistentce.csproj" />
   </ItemGroup>
 
   <ItemGroup>

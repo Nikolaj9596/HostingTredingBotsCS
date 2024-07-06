@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingTradingBots.Applicat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{05FBCD64-1A10-4F58-98BB-6F8E101CCC59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Persistentce", "Infrastructure\Profile.Persistentce\Profile.Persistentce.csproj", "{D6943FEE-1A1E-4D75-80E7-1ACAE3D6231B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingTradingBots.Persistentce", "Infrastructure\HostingTradingBots.Persistentce\HostingTradingBots.Persistentce.csproj", "{D6943FEE-1A1E-4D75-80E7-1ACAE3D6231B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presintation", "Presintation", "{52832B36-2BBE-49F2-B97F-A664CEE85995}"
 EndProject

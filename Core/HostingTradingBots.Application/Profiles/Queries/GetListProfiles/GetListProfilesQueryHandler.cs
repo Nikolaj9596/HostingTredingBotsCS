@@ -6,24 +6,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HostingTradingBots.Application.Profiles.Queries.GetListProfiles
 {
-    public class GetListProfilesQueryHandler
-      : IRequestHandler<GetListProfilesQuery, ListProfilesVm>
+  public class GetListProfilesQueryHandler
+    : IRequestHandler<GetListProfilesQuery, ListProfilesVm>
+  {
+    private readonly IProfileDBContext _dbContext;
+    private readonly IMapper _mapper;
+    public GetListProfilesQueryHandler(IProfileDBContext dBContext,
+        IMapper mapper) => (_dbContext, _mapper) = (dBContext, mapper);
+
+    public async Task<ListProfilesVm> Handle(GetListProfilesQuery request,
+        CancellationToken cancellationToken)
     {
-        private readonly IProfileDBContext _dbContext;
-        private readonly IMapper _mapper;
-        public GetListProfilesQueryHandler(IProfileDBContext dBContext,
-            IMapper mapper) => (_dbContext, _mapper) = (dBContext, mapper);
+      var profilesQuery = await _dbContext.Profiles
+        .Where(profile =>
+          profile.UserId == request.UserId)
+        .ProjectTo<ProfileLookupDto>(_mapper.ConfigurationProvider)
+        .ToListAsync(cancellationToken);
 
-        public async Task<ListProfilesVm> Handle(GetListProfilesQuery request,
-            CancellationToken cancellationToken)
-        {
-            var profilesQuery = await _dbContext.Profiles
-              .Where(profile =>
-                profile.UserId == request.UserId)
-              .ProjectTo<ProfileLookupDto>(_mapper.ConfigurationProvider)
-              .ToListAsync(cancellationToken);
-
-            return new ListProfilesVm { Profiles = profilesQuery };
-        }
+      return new ListProfilesVm { Profiles = profilesQuery };
     }
+  }
 }
