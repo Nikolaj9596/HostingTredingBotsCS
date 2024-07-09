@@ -10,10 +10,11 @@ namespace HostingTradingBots.Persistentce
         public static IServiceCollection AddPersistence(this IServiceCollection
             services, IConfiguration configuration)
         {
-            var connectionString = configuration["DbConnection"];
+            var connectionStringTp = configuration["DbConnectionTradingPlatform"];
+            var connectionStringP = configuration["DbConnectionProfile"];
             services.AddDbContext<TradingPlatformDBContext>(options =>
             {
-                options.UseSqlite(connectionString);
+                options.UseSqlite(connectionStringTp);
             });
 
             services.AddScoped<ITradingPlatformDBContext>(provider =>
@@ -21,7 +22,7 @@ namespace HostingTradingBots.Persistentce
 
             services.AddDbContext<ProfileDBContext>(options =>
             {
-                options.UseSqlite(connectionString);
+                options.UseSqlite(connectionStringP);
             });
             services.AddScoped<IProfileDBContext>(provider =>
                 provider.GetService<ProfileDBContext>());

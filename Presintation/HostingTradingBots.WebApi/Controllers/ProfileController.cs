@@ -30,7 +30,6 @@ namespace HostingTradingBots.WebApi.Controllers
         ///<response code="200">Success</response>
         ///<response code="401">If the user is unauthorized</response>
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult<ListProfilesVm>> GetAll()
         {
             var query = new GetListProfilesQuery

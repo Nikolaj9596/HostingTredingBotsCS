@@ -1,4 +1,3 @@
-using AutoMapper;
 using HostingTradingBots.Application.Common.Mappings;
 using HostingTradingBots.Application.TradingPlatforms.Commands.UpdateTradingPlatform;
 
