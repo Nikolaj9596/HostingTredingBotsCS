@@ -5,9 +5,9 @@ namespace HostingTradingBots.Application.TradingPlatforms.Commands.CreateTrading
 {
   public class CreateTradingPlatformCommandHandler : IRequestHandler<CreateTradingPlatformCommand, Guid>
   {
-    private readonly ITradingPlatrformDBContext _dbContext;
+    private readonly ITradingPlatformDBContext _dbContext;
 
-    public CreateTradingPlatformCommandHandler(ITradingPlatrformDBContext dBContext) =>
+    public CreateTradingPlatformCommandHandler(ITradingPlatformDBContext dBContext) =>
       _dbContext = dBContext;
 
     public async Task<Guid> Handle(CreateTradingPlatformCommand request, CancellationToken cancellationToken)

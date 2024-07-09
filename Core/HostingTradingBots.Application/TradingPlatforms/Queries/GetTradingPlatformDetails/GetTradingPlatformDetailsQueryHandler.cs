@@ -9,10 +9,10 @@ namespace HostingTradingBots.Application.TradingPlatforms.Queries.GetTradingPlat
   public class GetTradingPlatformDetailsQueryHandler
     : IRequestHandler<GetTradingPlatformDetailsQuery, TradingPlatformDetailsVm>
   {
-    private readonly ITradingPlatrformDBContext _dbContext;
+    private readonly ITradingPlatformDBContext _dbContext;
     private readonly IMapper _mapper;
 
-    public GetTradingPlatformDetailsQueryHandler(ITradingPlatrformDBContext dBContext,
+    public GetTradingPlatformDetailsQueryHandler(ITradingPlatformDBContext dBContext,
         IMapper mapper) => (_dbContext, _mapper) = (dBContext, mapper);
 
     public async Task<TradingPlatformDetailsVm> Handle(GetTradingPlatformDetailsQuery request,

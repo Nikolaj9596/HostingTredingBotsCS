@@ -15,7 +15,8 @@ namespace HostingTradingBots.WebApi
                 try
                 {
                     var context = serviceProvider.GetRequiredService<ProfileDBContext>();
-                    Dbinitializer.Initialize(context);
+                    var tradingPlatformContext = serviceProvider.GetRequiredService<TradingPlatformDBContext>();
+                    Dbinitializer.Initialize(context, tradingPlatformContext);
                 }
                 catch (Exception exception)
                 {

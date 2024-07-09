@@ -1,10 +1,14 @@
-namespace HostingTradingBots.Persistentce 
+namespace HostingTradingBots.Persistentce
 {
-  public class Dbinitializer
-  {
-    public static void Initialize(ProfileDBContext context)
+    public class Dbinitializer
     {
-      context.Database.EnsureCreated();
+        public static void Initialize(
+            ProfileDBContext profileContext,
+            TradingPlatformDBContext tradingPlatformContext
+        )
+        {
+            profileContext.Database.EnsureCreated();
+            tradingPlatformContext.Database.EnsureCreated();
+        }
     }
-  }
 }

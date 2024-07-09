@@ -6,9 +6,9 @@ namespace HostingTradingBots.Application.TradingPlatforms.Commands.DeleteTrading
 {
   public class DeleteTradingPlatformCommandHandler : IRequestHandler<DeleteTradingPlatformCommand, Unit>
   {
-    private readonly ITradingPlatrformDBContext _dbContext;
+    private readonly ITradingPlatformDBContext _dbContext;
 
-    public DeleteTradingPlatformCommandHandler(ITradingPlatrformDBContext dBContext) =>
+    public DeleteTradingPlatformCommandHandler(ITradingPlatformDBContext dBContext) =>
       _dbContext = dBContext;
 
     public async Task<Unit> Handle(DeleteTradingPlatformCommand request, CancellationToken cancellationToken)

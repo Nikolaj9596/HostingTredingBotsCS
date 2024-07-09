@@ -7,9 +7,9 @@ namespace HostingTradingBots.Application.TradingPlatforms.Commands.UpdateTrading
 {
   public class UpdateTradingPlatformCommandHandler : IRequestHandler<UpdateTradingPlatformCommand, Unit>
   {
-    private readonly ITradingPlatrformDBContext _dbContext;
+    private readonly ITradingPlatformDBContext _dbContext;
 
-    public UpdateTradingPlatformCommandHandler(ITradingPlatrformDBContext dBContext) =>
+    public UpdateTradingPlatformCommandHandler(ITradingPlatformDBContext dBContext) =>
       _dbContext = dBContext;
 
     public async Task<Unit> Handle(UpdateTradingPlatformCommand request, CancellationToken cancellationToken)
