@@ -20,6 +20,7 @@ namespace HostingTradingBots.WebApi
             {
                 config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
                 config.AddProfile(new AssemblyMappingProfile(typeof(IProfileDBContext).Assembly));
+                config.AddProfile(new AssemblyMappingProfile(typeof(ITradingPlatformDBContext).Assembly));
             });
 
             services.AddApplication();
@@ -44,7 +45,7 @@ namespace HostingTradingBots.WebApi
                     .AddJwtBearer("Bearer", options =>
                     {
                         options.Authority = "http://localhost:5098/";
-                        options.Audience = "ProfileWebApi";
+                        options.Audience = "HostingTradingBotsWebApi";
                         options.RequireHttpsMetadata = false;
                     });
             services.AddSwaggerGen(config =>
@@ -65,7 +66,7 @@ namespace HostingTradingBots.WebApi
             app.UseSwaggerUI(config =>
             {
                 config.RoutePrefix = string.Empty;
-                config.SwaggerEndpoint("swagger/v1/swagger.json", "Profile API");
+                config.SwaggerEndpoint("swagger/v1/swagger.json", "HostingTradingBots API");
             });
             app.UseCustomExceptionHandler();
             app.UseRouting();
