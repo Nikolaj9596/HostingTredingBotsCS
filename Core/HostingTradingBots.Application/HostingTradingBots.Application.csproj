@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Profile.Domain\Profile.Domain.csproj" />
     <ProjectReference Include="..\TradingPlatform.Domain\TradingPlatform.Domain.csproj" />
+    <ProjectReference Include="..\TradingPlatformAccount.Domain\TradingPlatformAccount.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
