@@ -7,7 +7,7 @@ namespace HostingTradingBots.Application.TradingPlatformAccounts.Commands.Create
         public CreateTradingPlatformAccountCommandValidator()
         {
             RuleFor(createTradingPlatformAccountCommand =>
-                createTradingPlatformAccountCommand.tradingPlatformId).NotEmpty();
+                createTradingPlatformAccountCommand.TradingPlatformId).NotEmpty();
             RuleFor(createTradingPlatformAccountCommand =>
                 createTradingPlatformAccountCommand.UserId).NotEmpty();
             RuleFor(createTradingPlatformAccountCommand =>

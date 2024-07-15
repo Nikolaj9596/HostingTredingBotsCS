@@ -4,7 +4,7 @@ namespace HostingTradingBots.Application.TradingPlatformAccounts.Commands.Create
 {
     public class CreateTradingPlatformAccountCommand : IRequest<Guid>
     {
-        public Guid tradingPlatformId { get; set; }
+        public Guid TradingPlatformId { get; set; }
         public Guid UserId { get; set; }
         public Boolean IsActive { get; set; }
         public String ApiKey { get; set; }

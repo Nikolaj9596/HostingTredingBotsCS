@@ -15,7 +15,7 @@ namespace HostingTradingBots.Application.TradingPlatformAccounts.Commands.Create
             var tradingPlatformAccount = new TradingPlatformAccount.Domain.TradingPlatformAccount
             {
                 Id = Guid.NewGuid(),
-                tradingPlatformId = request.tradingPlatformId,
+                TradingPlatformId = request.TradingPlatformId,
                 IsActive = request.IsActive,
                 UserId = request.UserId,
                 ApiKey = request.ApiKey,
