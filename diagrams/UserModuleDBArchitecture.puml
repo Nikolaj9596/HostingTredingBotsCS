@@ -52,6 +52,7 @@ class TradingPlatform {
 class TradingPlatformAccount {
   + id: primary_key[uuid]
   + trading_platform_id: primary_key[uuid]
+  + api_token: string
   + created_at: datetime 
   + updated_at: datetime 
   + archived_at: datetime

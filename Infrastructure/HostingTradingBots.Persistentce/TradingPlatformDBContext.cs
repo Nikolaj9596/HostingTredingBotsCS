@@ -7,6 +7,7 @@ namespace HostingTradingBots.Persistentce
     public class TradingPlatformDBContext : DbContext, ITradingPlatformDBContext
     {
         public DbSet<TradingPlatform.Domain.TradingPlatform> TradingPlatforms { get; set; }
+        
         public TradingPlatformDBContext(DbContextOptions<TradingPlatformDBContext> options)
           : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
