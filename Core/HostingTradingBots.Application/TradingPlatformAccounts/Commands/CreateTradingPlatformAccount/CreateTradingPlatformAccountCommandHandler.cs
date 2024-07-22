@@ -25,7 +25,7 @@ namespace HostingTradingBots.Application.TradingPlatformAccounts.Commands.Create
 
             };
 
-            await _dbContext.TradingPlatformAccounts.AddAsync(
+            await _dbContext.TradingPlatformsAccounts.AddAsync(
                 tradingPlatformAccount, cancellationToken);
             await _dbContext.SaveChangesAsync(cancellationToken);
             return tradingPlatformAccount.Id;

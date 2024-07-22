@@ -4,7 +4,7 @@ namespace HostingTradingBots.Application.Interfaces
 {
     public interface ITradingPlatformAccountDBContext
     {
-        DbSet<TradingPlatformAccount.Domain.TradingPlatformAccount> TradingPlatformAccounts { get; set; }
+        DbSet<TradingPlatformAccount.Domain.TradingPlatformAccount> TradingPlatformsAccounts { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

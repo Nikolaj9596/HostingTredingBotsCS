@@ -14,14 +14,14 @@ namespace HostingTradingBots.Application.TradingPlatformAccounts.Commands.Delete
         public async Task<Unit> Handle(DeleteTradingPlatformAccountCommand request, CancellationToken cancellationToken)
         {
 
-            var entity = await _dbContext.TradingPlatformAccounts.FindAsync(new object[] { request.Id }, cancellationToken);
+            var entity = await _dbContext.TradingPlatformsAccounts.FindAsync(new object[] { request.Id }, cancellationToken);
 
             if (entity == null)
             {
                 throw new NotFoundException(nameof(Profile), request.Id);
             }
 
-            _dbContext.TradingPlatformAccounts.Remove(entity);
+            _dbContext.TradingPlatformsAccounts.Remove(entity);
             await _dbContext.SaveChangesAsync(cancellationToken);
 
             return Unit.Value;
