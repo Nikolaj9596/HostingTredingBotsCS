@@ -4,11 +4,13 @@ namespace HostingTradingBots.Persistentce
     {
         public static void Initialize(
             ProfileDBContext profileContext,
-            TradingPlatformDBContext tradingPlatformContext
+            TradingPlatformDBContext tradingPlatformContext,
+            TradingPlatformAccountDBContext tradingPlatformAccountContext,
         )
         {
             profileContext.Database.EnsureCreated();
             tradingPlatformContext.Database.EnsureCreated();
+            tradingPlatformAccountContext.Database.EnsureCreated();
         }
     }
 }
