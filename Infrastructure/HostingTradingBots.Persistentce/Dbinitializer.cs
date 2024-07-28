@@ -5,7 +5,7 @@ namespace HostingTradingBots.Persistentce
         public static void Initialize(
             ProfileDBContext profileContext,
             TradingPlatformDBContext tradingPlatformContext,
-            TradingPlatformAccountDBContext tradingPlatformAccountContext,
+            TradingPlatformAccountDBContext tradingPlatformAccountContext
         )
         {
             profileContext.Database.EnsureCreated();

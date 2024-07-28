@@ -9,8 +9,5 @@ namespace HostingTradingBots.Application.TradingPlatformAccounts.Commands.Create
         public Boolean IsActive { get; set; }
         public String ApiKey { get; set; }
         public String? TestApiKey { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public DateTime? ArchivedAt { get; set; }
     }
 }
